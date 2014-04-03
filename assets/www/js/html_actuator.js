@@ -151,20 +151,20 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(14);
-  mytxt[0]="Haa , you lost the game !3";
-  mytxt[1]="Haaa , you lost the game !4";
-  mytxt[2]="Haaaa , you lost the game !5";
-  mytxt[3]="Haaaaa , you lost the game !6";
-  mytxt[4]="Haaaaaa , you lost the game !7";
-  mytxt[5]="Haaaaaaa , you lost the game !8";
-  mytxt[6]="Haaaaaaaa , you lost the game !9";
-  mytxt[7]="Haaaaaaaaa , you lost the game !10";
-  mytxt[8]="Haaaaaaaaaa , you lost the game !11";
-  mytxt[9]="Haaaaaaaaaaa , you lost the game !12";
-  mytxt[10]="Haaaaaaaaaaaa , you lost the game !13";
-  mytxt[11]="Haaaaaaaaaaaaa , you lost the game !14";
-  mytxt[12]="Haaaaaaaaaaaaaa , you lost the game !15";
-  mytxt[13]="Haaaaaaaaaaaaaaa , you lost the game !16";
+  mytxt[0]="Haa , you lost at 3 tiles!";
+  mytxt[1]="Haa , you lost at 4 tiles!";
+  mytxt[2]="Haa , you lost at 5 tiles!";
+  mytxt[3]="Haa , you lost at 6 tiles!";
+  mytxt[4]="Haa , you lost at 7 tiles!";
+  mytxt[5]="Haa , you lost at 8 tiles!";
+  mytxt[6]="Haa , you lost at 9 tiles!";
+  mytxt[7]="Haa , you lost at 10 tiles!";
+  mytxt[8]="Haa , you lost at 11 tiles!";
+  mytxt[9]="Haa , you lost at 12 tiles!";
+  mytxt[10]="Haa , you lost at 13 tiles!";
+  mytxt[11]="Haa , you lost at 14 tiles!";
+  mytxt[12]="Haa , you lost at 15 tiles!";
+  mytxt[13]="Haa , you lost at 16 tiles!";
 
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
@@ -194,8 +194,8 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
   tweet.setAttribute("data-via", "Y. Z. Chen");
-  tweet.setAttribute("data-url", "http://geno1024.github.com");
-  tweet.setAttribute("data-counturl", "http://geno1024.github.com");
+  tweet.setAttribute("data-url", "http://github.com/geno1024");
+  tweet.setAttribute("data-counturl", "http://github.com/geno1024");
   tweet.textContent = "Tweet";
 
   var text = "I scored " + this.score + " points at 23333333333333333 edition, a game where you " +
